@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 import "./globals.css";
 import Navbar from "src/components/Navbar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoSerif = Noto_Serif({
   subsets: ["latin"],
 });
 
@@ -25,9 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${notoSerif.className}`}>
         <Navbar />
-        {children}
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "36px 0",
+          }}
+        >
+          <div style={{ width: "960px", height: "100%" }}>{children}</div>
+        </div>
       </body>
     </html>
   );

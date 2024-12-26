@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "./Navbar.module.scss";
 import Link from "next/link";
-import Logo from "src/assets/Logo/Logo";
+import Logo from "../../../public/assets/Logo/Logo";
 
 const Navbar = () => {
   return (
@@ -14,19 +14,22 @@ const Navbar = () => {
       <div className={styled.navbar__right}>
         <div className={styled.navbar__links}>
           <Link className={styled.navbar__link} href={""}>
-            Readings
+            Home
           </Link>
           <Link className={styled.navbar__link} href={""}>
-            Tarot Readers
+            About Us
           </Link>
           <Link className={styled.navbar__link} href={""}>
-            Horoscope
+            AI Readings
           </Link>
           <Link className={styled.navbar__link} href={""}>
-            Blog
+            Universal Waite
           </Link>
           <Link className={styled.navbar__link} href={""}>
-            Academy
+            Horoscope Belline
+          </Link>
+          <Link className={styled.navbar__link} href={""}>
+            Contact
           </Link>
         </div>
 

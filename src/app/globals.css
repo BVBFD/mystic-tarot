@@ -1,8 +1,18 @@
+:root {
+  --main-color: #141122;
+  --border-radius: 0.5rem;
+  --border-color: #3c3465;
+  --button-bg-color: #3b19e6;
+  --button-bg-secondary-color: #2a2447;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: var(--main-color);
+  color: #ffffff;
 }
 
 html::-webkit-scrollbar {
@@ -14,7 +24,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #141122;
+  background: var(--main-color);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
