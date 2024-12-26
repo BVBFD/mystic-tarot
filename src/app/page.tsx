@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -47,10 +48,24 @@ export default function Home() {
       </div>
 
       <div style={{ margin: "5rem 0 2rem 0" }}>
-        <h2>Discover More Mystical Services</h2>
+        <h2>Discover More Infomation about Tarot Deck</h2>
       </div>
 
-      <div></div>
+      <div className={styles.tarotInfoBox}>
+        <label className={styles.univeralWaite}>
+          <div className={styles.univeralWaiteImage}>
+            <h1>Universal Waite</h1>
+            <p>The Universal Waite Tarot deck offers timeless wisdom and clarity for your readings.</p>
+          </div>
+        </label>
+
+        <label className={styles.horoscopeBelline}>
+          <div className={styles.horoscopeBellineImage}>
+            <h1>Horoscope Belline</h1>
+            <p>The Horoscope Belline Tarot deck provides profound insights and guidance for your spiritual journey.</p>
+          </div>
+        </label>
+      </div>
     </main>
   );
 }
