@@ -3,15 +3,15 @@ import AiSectionBannerFooter from "./AiSectionBannerFooter/AiSectionBannerFooter
 
 const AiSectionBanner = () => (
   <Banner
-    title="Explore Our AI Tarot Deck"
+    bgImg="/images/home_deck.png"
+    footer={<AiSectionBannerFooter />}
     paragraph={
       <>
         <p>Our AI Tarot deck provides instant, accurate readings.</p>
         <p>Explore the technology behind the cards and the science of prediction.</p>
       </>
     }
-    bgImg="/images/home_deck.png"
-    footer={<AiSectionBannerFooter />}
+    title="Explore Our AI Tarot Deck"
   />
 );
 

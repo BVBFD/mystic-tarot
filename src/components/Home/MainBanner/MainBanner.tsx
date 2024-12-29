@@ -5,14 +5,14 @@ import Button from "src/common/Button/Button";
 const MainBanner = () => (
   <section className={styles.mainBannerSection}>
     <Banner
-      title="Welcome to Mystic Tarot"
+      bgImg="/images/home_main.png"
       paragraph={
         <>
           <p>Discover your future with the world's most trusted tarot readers.</p>
           <p>Get a free reading now.</p>
         </>
       }
-      bgImg="/images/home_main.png"
+      title="Welcome to Mystic Tarot"
     />
 
     <div className={styles.mainBannerSectionContent}>
@@ -22,7 +22,7 @@ const MainBanner = () => (
         <p>Choose your path to wisdom and empowerment.</p>
       </div>
       <div className={styles.btnBox}>
-        <Button btnText="Go To AI Readings" width="12rem" height="3rem" />
+        <Button btnText="Go To AI Readings" height="3rem" width="12rem" />
       </div>
     </div>
   </section>

@@ -10,7 +10,7 @@ const Button = ({
   fontSize = "0.875rem",
 }: BtnPropsType) => {
   return (
-    <Link href={href} className={styles.button} style={{ backgroundColor: bgColor, width, height, fontSize }}>
+    <Link className={styles.button} href={href} style={{ backgroundColor: bgColor, width, height, fontSize }}>
       {btnText}
     </Link>
   );

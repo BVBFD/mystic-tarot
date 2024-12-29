@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className={styled.navbar__buttons}>
           <Button btnText="Log in" />
-          <Button btnText="Sign up" bgColor="var(--button-bg-secondary-color)" />
+          <Button bgColor="var(--button-bg-secondary-color)" btnText="Sign up" />
         </div>
       </div>
     </header>

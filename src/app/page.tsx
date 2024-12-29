@@ -1,6 +1,4 @@
-import Button from "src/common/Button/Button";
 import styles from "./page.module.scss";
-import Banner from "src/common/Banner/Banner";
 import TarotInfoBoxs from "src/components/Home/TarotInfoBoxs/TarotInfoBoxs";
 import SectionTitle from "src/components/Home/SectionTitle/SectionTitle";
 import MainBanner from "src/components/Home/MainBanner/MainBanner";

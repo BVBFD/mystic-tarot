@@ -24,11 +24,11 @@ const TarotInfoBoxs = () => {
     <div className={styles.tarotInfoBoxs}>
       {banners.map((banner, index) => (
         <Banner
-          key={index}
-          title={banner.title}
-          paragraph={banner.paragraph}
           bgImg={banner.bgImg}
           height={banner.height}
+          key={index}
+          paragraph={banner.paragraph}
+          title={banner.title}
         />
       ))}
     </div>

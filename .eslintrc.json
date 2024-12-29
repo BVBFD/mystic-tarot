@@ -24,7 +24,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": ["react", "react-hooks", "prettier", "unused-imports"],
   "rules": {
     "no-param-reassign": ["error", { "props": false }],
     "@typescript-eslint/no-unused-vars": "error",
@@ -75,9 +75,20 @@
     ],
     "no-unused-expressions": "off",
     "no-prototype-builtins": "off",
+    // Unused imports
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     // REACT
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
+    "react/react-in-jsx-scope": 0,
     "jsx-a11y/href-no-hash": [0],
     "react/display-name": 0,
     "react/no-deprecated": "error",
