@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "./Navbar.module.scss";
 import Link from "next/link";
 import Logo from "../../../public/assets/Logo/Logo";

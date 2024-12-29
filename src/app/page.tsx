@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.scss";
 import TarotInfoBoxs from "src/components/Home/TarotInfoBoxs/TarotInfoBoxs";
 import SectionTitle from "src/components/Home/SectionTitle/SectionTitle";

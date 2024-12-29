@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./TarotInfoBoxs.module.scss";
 import Banner from "src/common/Banner/Banner";
 
