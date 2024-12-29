@@ -2,33 +2,6 @@
   height: 100%;
   width: 100%;
 
-  h1 {
-    font-size: 3rem;
-    font-weight: 900;
-  }
-
-  p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.4rem;
-  }
-
-  .mainImageBox {
-    width: 100%;
-    height: 480px;
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("/images/home_main.png");
-    background-position: center;
-    border-radius: var(--border-radius);
-    border-color: var(--border-color);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
   .deckImageBox {
     width: 100%;
     height: 480px;
@@ -45,40 +18,9 @@
     text-align: center;
   }
 
-  .tarotInfoBox {
+  .tarotInfoBoxs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-
-    label {
-      width: 100%;
-      height: 300px;
-
-      div {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-position: center;
-        border-radius: var(--border-radius);
-        border-color: var(--border-color);
-        padding: 2rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-
-      .univeralWaiteImage {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%),
-          url("/images/universal_waite.png");
-      }
-
-      .horoscopeBellineImage {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%),
-          url("/images/horoscope_belline.png");
-      }
-    }
   }
 }
