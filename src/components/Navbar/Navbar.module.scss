@@ -48,29 +48,4 @@
     display: flex;
     gap: 8px;
   }
-
-  &__button {
-    display: flex;
-    min-width: 84px;
-    max-width: 480px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 8px;
-    height: 40px;
-    padding: 0 16px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 0.015em;
-
-    &--login {
-      background-color: var(--button-bg-color);
-    }
-
-    &--signup {
-      background-color: var(--button-bg-secondary-color);
-    }
-  }
 }

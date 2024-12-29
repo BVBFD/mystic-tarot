@@ -2,6 +2,7 @@ import React from "react";
 import styled from "./Navbar.module.scss";
 import Link from "next/link";
 import Logo from "../../../public/assets/Logo/Logo";
+import Button from "src/common/Button/Button";
 
 const Navbar = () => {
   return (
@@ -34,12 +35,8 @@ const Navbar = () => {
         </div>
 
         <div className={styled.navbar__buttons}>
-          <Link className={`${styled.navbar__button} ${styled["navbar__button--login"]}`} href={""}>
-            Log in
-          </Link>
-          <Link className={`${styled.navbar__button} ${styled["navbar__button--signup"]}`} href={""}>
-            Sign up
-          </Link>
+          <Button btnText="Log in" />
+          <Button btnText="Sign up" bgColor="var(--button-bg-secondary-color)" />
         </div>
       </div>
     </header>

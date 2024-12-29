@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "src/common/Button/Button";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -21,9 +21,7 @@ export default function Home() {
           <p>Choose your path to wisdom and empowerment.</p>
         </div>
         <div className={styles.buttonBox} style={{ marginTop: "24px" }}>
-          <button>
-            <span>Go To AI Readings</span>
-          </button>
+          <Button btnText="Go To AI Readings" width="12rem" height="3rem" />
         </div>
       </div>
 
@@ -41,9 +39,7 @@ export default function Home() {
         </div>
 
         <div className={styles.buttonBox} style={{ marginTop: "24px" }}>
-          <button>
-            <span>About Us</span>
-          </button>
+          <Button btnText="About Us" width="12rem" height="3rem" />
         </div>
       </div>
 
