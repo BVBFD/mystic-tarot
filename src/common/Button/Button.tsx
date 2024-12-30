@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HTMLProps, CSSProperties } from "react";
+import { CSSProperties, HTMLProps } from "react";
 import styles from "./Button.module.scss";
 
 const Button = ({

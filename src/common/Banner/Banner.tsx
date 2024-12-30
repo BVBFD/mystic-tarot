@@ -1,4 +1,4 @@
-import { ReactNode, HTMLProps } from "react";
+import { HTMLProps, ReactNode } from "react";
 import styles from "./Banner.module.scss";
 
 const Banner = ({

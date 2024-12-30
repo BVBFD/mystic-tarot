@@ -5,22 +5,22 @@ import styles from "./MainBanner.module.scss";
 const MainBanner = () => {
   return (
     <Banner
-      title={"AI-Powered Tarot Readings"}
+      bgImg={"/images/aboutUs_main.png"}
+      className={`${styles.aboutUsMainBanner}`}
+      footer={
+        <Button
+          btnText="Get a Reading"
+          fontSize="1rem"
+          height="3rem"
+          href="/aiReadings"
+          style={{ marginTop: "2rem" }}
+          width="10rem"
+        />
+      }
       paragraph={
         "Experience a new kind of tarot reading, powered by AI. Our technology provides accurate, personalized readings that are designed to help you gain insight and clarity into your life."
       }
-      bgImg={"/images/aboutUs_main.png"}
-      footer={
-        <Button
-          href="/aiReadings"
-          btnText="Get a Reading"
-          fontSize="1rem"
-          width="10rem"
-          height="3rem"
-          style={{ marginTop: "2rem" }}
-        />
-      }
-      className={`${styles.aboutUsMainBanner}`}
+      title={"AI-Powered Tarot Readings"}
     />
   );
 };
