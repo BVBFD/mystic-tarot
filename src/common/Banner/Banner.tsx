@@ -1,14 +1,25 @@
-import { ReactNode } from "react";
+import { ReactNode, HTMLProps } from "react";
 import styles from "./Banner.module.scss";
 
-const Banner = ({ title, paragraph, footer = <></>, bgImg, width = "100%", height = "480px" }: BannerPropsType) => {
+const Banner = ({
+  title,
+  paragraph,
+  footer = <></>,
+  bgImg,
+  width = "100%",
+  height = "480px",
+  className = "",
+  ...props
+}: BannerPropsType) => {
   return (
-    <div
-      className={styles.mainImageBox}
+    <label
+      {...props}
+      className={`${styles.mainImageBox} ${className}`}
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url(${bgImg})`,
         width,
         height,
+        ...props.style,
       }}
     >
       <h1>{title}</h1>
@@ -16,17 +27,18 @@ const Banner = ({ title, paragraph, footer = <></>, bgImg, width = "100%", heigh
         <div className={styles.paragraphBox}>{paragraph}</div>
       </main>
       {footer}
-    </div>
+    </label>
   );
 };
 
-interface BannerPropsType {
+interface BannerPropsType extends HTMLProps<HTMLLabelElement> {
   title: string;
   paragraph: ReactNode;
   footer?: ReactNode;
   bgImg: string;
   width?: string;
   height?: string;
+  className?: string;
 }
 
 export default Banner;

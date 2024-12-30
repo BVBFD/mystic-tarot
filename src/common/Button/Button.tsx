@@ -1,16 +1,28 @@
 import Link from "next/link";
+import { HTMLProps, CSSProperties } from "react";
 import styles from "./Button.module.scss";
 
 const Button = ({
   href = "",
   btnText,
-  bgColor = "var(--button-bg-color)",
+  bgColor = "primary",
   width = "84px",
   height = "40px",
   fontSize = "0.875rem",
+  style = {},
+  className = "",
+  ...props
 }: BtnPropsType) => {
+  const combinedStyle: CSSProperties = {
+    backgroundColor: bgColor === "primary" ? "var(--button-bg-color)" : "var(--button-bg-secondary-color)",
+    width,
+    height,
+    fontSize,
+    ...style,
+  };
+
   return (
-    <Link className={styles.button} href={href} style={{ backgroundColor: bgColor, width, height, fontSize }}>
+    <Link {...props} className={`${styles.button} ${className}`} href={href} style={combinedStyle}>
       {btnText}
     </Link>
   );
@@ -18,11 +30,13 @@ const Button = ({
 
 export default Button;
 
-interface BtnPropsType {
+interface BtnPropsType extends HTMLProps<HTMLAnchorElement> {
   href?: string;
   btnText: string;
-  bgColor?: "var(--button-bg-color)" | "var(--button-bg-secondary-color)";
+  bgColor?: "primary" | "secondary";
   width?: string;
   height?: string;
   fontSize?: string;
+  style?: CSSProperties;
+  className?: string;
 }
