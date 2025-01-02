@@ -1,0 +1,34 @@
+.howItWorksBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #443c53;
+  background-color: #201c26;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  .howItWorksBoxSvg {
+    width: 100%;
+  }
+
+  .howItWorksBoxContents {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #a79db8;
+      line-height: 1.5;
+    }
+  }
+}
